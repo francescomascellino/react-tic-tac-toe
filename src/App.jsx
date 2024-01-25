@@ -91,7 +91,6 @@ function App() {
 
         if (clickedSquareValue === null && winner === null) {
 
-            // setPlayerTurn((prevPlayerTurn) => (prevPlayerTurn === "X" ? "O" : "X"));
             setPlayerTurn(playerTurn === "X" ? "O" : "X");
 
             const updatedSquares = [...squares];
