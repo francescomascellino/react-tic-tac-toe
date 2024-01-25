@@ -131,6 +131,7 @@ function App() {
         );
 
         setPlayerTurn('O');
+        setWinner(null);
     }
 
 

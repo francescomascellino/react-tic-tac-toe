@@ -75,6 +75,7 @@ function handleReset() {
     );
 
     setPlayerTurn('O');
+    setWinner(null);
 }
 ```
 
