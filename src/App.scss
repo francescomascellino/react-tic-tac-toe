@@ -1,0 +1,86 @@
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+
+
+.container-fluid {
+    background-color: antiquewhite;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.square {
+
+    border: 2px solid #252525 !important;
+    background-color: #292929;
+    aspect-ratio: 1/1;
+    min-width: calc((100 / 4)px) !important;
+    max-height: calc((100 / 4)px) !important;
+
+    font-size: xx-large;
+    color: #646cff !important;
+
+    &:hover {
+        border: 1px solid #646cff !important;
+        box-shadow: 0 0 5px rgba(100, 108, 255, 0.7) !important;
+    }
+
+    &[data-content='O'] {
+        background-color: #1a1a1a;
+        color: #61dafbaa!important;
+    }
+
+    &[data-content='X'] {
+        background-color: #1a1a1a;
+        color: rgb(148, 60, 60)!important;
+    }
+}
+
+.row {
+    max-width: 600px;
+    margin: 0 auto !important;
+
+    &:first-child .col:first-child {
+        border-top-left-radius: 5px;
+    }
+
+    &:first-child .col:last-child {
+        border-top-right-radius: 5px;
+    }
+
+    &:last-child .col:first-child {
+        border-bottom-left-radius: 5px;
+    }
+
+    &:last-child .col:last-child {
+        border-bottom-right-radius: 5px;
+    }
+}
