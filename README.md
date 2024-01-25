@@ -7,9 +7,7 @@
 npm create vite@latest . -- --template react
 ```
 
-## Components
-
-### HTML Markup
+### Render HTML Markup
 ```js
 <div className="container">
     {squares.map((row, rowIndex) => 
@@ -27,42 +25,6 @@ npm create vite@latest . -- --template react
         </div>
     ))}
 </div>
-```
-```js
-{
-    posts.filter((post) => post.likes > 80).map((post) => (
-
-        <Posts
-            key={post.id}
-            avatar={post.author.image}
-            author={post.author.name}
-            // OTHER PROPS
-        />
-
-    ))
-}
-```
-
-### Component *(Posts.jsx)*
-```js
-import './Posts.scss'
-
-import { useState } from 'react'
-
-function Posts({ prop1, prop2, ecc }) {
-
-    // LOGIC
-
-    return (
-        <>
-
-            /* MARRKUP */
-
-        </>
-    )
-}
-
-export default Posts
 ```
 
 ## useState Hook Basics
